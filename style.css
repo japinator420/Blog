@@ -1,18 +1,249 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Principal */
+:root{
+    --color-principal: #FF6B00;
+    --color-fondo: #121214;
+    --color-texto: #F5F5F7;
+    --sombra-texto: 0 0 8px rgba(255, 107, 0, 0.6);
+    --color-card: rgba(0, 0, 0, 0.4);
+    --sombra-contenedores: 0 0 20px rgba(255, 107, 0, 0.2);
+    --sombra-parrafos: 1px 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+p{
+    text-shadow: var(--sombra-parrafos);
+}
+
 body{
     font-family: Lato, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+h1, h2, h3{
+    color: var(--color-principal); /* Tu naranja */
+    text-shadow: var(--sombra-texto);
+    font-weight: bold;
+    margin: 20px;
+}
+
+
+
+h1{
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    text-transform: uppercase;
+    text-shadow: var(--sombra-parrafos);
+    
+    
+    font-size: 100px;
+    text-align: center;
+}
+
+/* Cabecera */
+header{
+    justify-self: center;
+    margin: 20px;
+}
+
+header p{
+    justify-self: center;
+}
+
+/* Navegacion */
+#barra-navegacion{
+    border: 1px solid black;
+    background-color: var(--color-principal);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+#barra-navegacion ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px;
+}
+
+#barra-navegacion a{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+#barra-navegacion a:hover{
+    color: red;
+}
+
+/* Inicio */
+.main-card{
+    background-color: var(--color-card);
+    box-shadow: var(--sombra-contenedores);
+    border: 2px solid var(--color-principal);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    width: 800px;
+
+    padding: 30px;
+
+    margin-bottom: 20px;
+    border-radius: 12px; 
+}
+
+#autor-img{
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Secciones */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    margin: 20px;
+    width: 80%;
+    justify-self: center;
+}
+
+
+/* Personajes */
+.contenedor-personajes h2 {
+    background-color: #132237;
+    color: var(--color-principal);
+    padding: 15px 20px;
+    border-left: 5px solid var(--color-principal);
+    border-radius: 4px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 1px;
+}
+
+.personaje{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-card);
+    box-shadow: var(--sombra-contenedores);
+    border: 2px solid var(--color-principal);
+
+    align-items: center;
+    text-align: left;
+
+    width: 1200px;
+
+    padding: 50px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+}
+
+
+.personaje h3{
+    margin-bottom: 10px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.personaje li{
+    list-style: none;
+}
+
+.info-personaje{
+    margin: 20px;
+}
+
+.info-personaje h4{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.img-personaje{
+    height: auto;
+    width: 300px;
+    margin: 20px;
+}
+
+/* Serie */
+.serie{
+    background-color: var(--color-card);
+    box-shadow: var(--sombra-contenedores);
+    border: 2px solid var(--color-principal);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    width: 800px;
+
+    padding: 30px;
+
+    margin-bottom: 20px;
+    border-radius: 12px; 
 }
 
 .serie-logo{
     height: auto;
-    width: 200px;
+    width: 300px;
+}
+
+/* Peliculas */
+.pelicula{
+    background-color: var(--color-card);
+    box-shadow: var(--sombra-contenedores);
+    border: 2px solid var(--color-principal);
+
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    width: 800px;
+
+    padding: 30px;
+
+    margin-bottom: 20px;
+    border-radius: 12px;    
+}
+
+.info-pelicula{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: left;
 }
 
 .pelicula-logo{
     height: auto;
-    width: 200px;
+    width: 300px;
+    margin: 20px;
+}
+/* Formulario */
+form {
+    margin: 40px; 
+    max-width: 600px;
+    
+    background-color: var(--color-card);
+    padding: 40px;
+    border-radius: 12px;
+    border: 2px solid var(--color-principal);
+    box-shadow: var(--sombra-contenedores);
+    
+    display: flex;
+    flex-direction: column;
 }
 
-.img-personaje{
-    height: 200px;
-    width: auto;
+/* Pie de página */
+footer{
+    justify-self: center;
+    margin: 20px;
 }

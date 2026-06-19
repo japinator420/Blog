@@ -12,8 +12,9 @@
 <body>
     <header>
         <h1>Personajes</h1>
+        <p>Los mas recurrentes e importantes de toda la historia.</p>
     </header>
-    <nav>
+    <nav id="barra-navegacion">
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="personajes.html">Personajes</a></li>
@@ -22,141 +23,291 @@
             <li><a href="sorteos.html">Sorteos</a></li>
         </ul>
     </nav>
-    <section>
+    <section class="contenedor-personajes">
         <h2>Los Guerreros Z</h2>
         
-        <h3>Goku</h3>
-        <p>El protagonista de la historia, un Saiyajin criado en la Tierra que busca constantemente superar sus propios límites a través de las artes marciales y la protección de su hogar adoptivo.</p>
-        <ul>
-            <li><strong>Super Saiyajin (Fases 1, 2 y 3):</strong> Las transformaciones clásicas que multiplican su poder dorado.</li>
-            <li><strong>Super Saiyajin Dios / Blue:</strong> Los estados divinos que alcanzan el ki de los dioses.</li>
-            <li><strong>Ultra Instinto (Señal y Dominado):</strong> El estado técnico definitivo donde su cuerpo reacciona de forma autónoma.</li>
-        </ul>
-        <img src="resources/personajes/goku.png" class="img-personaje">
+        <card class="personaje">
+            <div class="info-personaje">
+                <h3>Goku</h3>
+                <p>El protagonista de la historia, un Saiyajin criado en la Tierra que busca constantemente superar sus propios límites a través de las artes marciales y la protección de su hogar adoptivo.</p>
+                <h4>Poderes y Habilidades</h4>
+                <ul>
+                    <li><strong>Super Saiyajin (Fases 1, 2 y 3):</strong> Las transformaciones clásicas que multiplican su poder dorado.</li>
+                    <li><strong>Super Saiyajin Dios / Blue:</strong> Los estados divinos que alcanzan el ki de los dioses.</li>
+                    <li><strong>Ultra Instinto (Señal y Dominado):</strong> El estado técnico definitivo donde su cuerpo reacciona de forma autónoma.</li>
+                    <li><strong>Kamehameha:</strong> Su técnica más icónica, un poderoso rayo de energía azul.</li>
+                    <li><strong>Genki-dama:</strong> Una técnica que recolecta energía de todos los seres vivos para crear un ataque devastador.</li>
+                    <li><strong>Teletransportación:</strong> La habilidad de moverse instantáneamente a cualquier lugar.</li>
+                </ul>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="resources/personajes/goku.png" class="img-personaje" alt="Goku">
+            </div>
+        </card>
 
-        <h3>Vegeta</h3>
-        <p>El orgulloso Príncipe de los Saiyajin. Al principio un enemigo despiadado, con el tiempo se convierte en el mayor rival y aliado de Goku, luchando por proteger a su familia.</p>
-        <ul>
-            <li><strong>Super Saiyajin / Super Vegeta:</strong> Logrado a través de la pura frustración y el entrenamiento duro.</li>
-            <li><strong>Majin Vegeta:</strong> Estado donde despierta su maldad interior gracias a la magia de Babidi.</li>
-            <li><strong>Super Saiyajin Blue Evolution / Ultra Ego:</strong> Sus máximos niveles de poder divinos basados en el orgullo y la destrucción.</li>
-        </ul>
-        <img src="resources/personajes/vegeta.png" class="img-personaje">
+        <card class="personaje">
+            <div class="info-personaje">
+                <h3>Vegeta</h3>
+                <p>El orgulloso Príncipe de los Saiyajin. Al principio un enemigo despiadado, con el tiempo se convierte en el mayor rival y aliado de Goku, luchando por proteger a su familia.</p>
+                <h4>Poderes y Habilidades</h4>
+                <ul>
+                    <li><strong>Super Saiyajin / Super Vegeta:</strong> Logrado a través de la pura frustración y el entrenamiento duro.</li>
+                    <li><strong>Majin Vegeta:</strong> Estado donde despierta su maldad interior gracias a la magia de Babidi.</li>
+                    <li><strong>Super Saiyajin Blue Evolution / Ultra Ego:</strong> Sus máximos niveles de poder divinos basados en el orgullo y la destrucción.</li>
+                    <li><strong>Garlik Ho:</strong> Su ráfaga de ki purpura más representativa, rival directa del Kamehameha.</li>
+                    <li><strong>Final Flash (Resplandor Final):</strong> Uno de los ataques de energía acumulada más destructivos de la saga.</li>
+                </ul>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="resources/personajes/vegeta.png" class="img-personaje" alt="Vegeta">
+            </div>
+        </card>
 
-        <h3>Piccolo</h3>
-        <p>La reencarnación del Rey Demonio Piccolo Daimaku, quien comenzó como un villano obsesionado con matar a Goku, pero se convirtió en el sabio mentor de Gohan y un protector clave de la Tierra.</p>
-        <ul>
-            <li><strong>Fusión Namekiana (con Nail y Kami-sama):</strong> Uniones místicas que incrementaron drásticamente su poder básico.</li>
-            <li><strong>Piccolo Naranja (Orange Piccolo):</strong> Su transformación más poderosa, desbloqueada gracias a las Esferas del Dragón.</li>
-        </ul>
-        <img src="resources/personajes/piccolo.png" class="img-personaje">
+        <card class="personaje">
+            <div class="info-personaje">
+                <h3>Piccolo</h3>
+                <p>La reencarnación del Rey Demonio Piccolo Daimaku, quien comenzó como un villano obsesionado con matar a Goku, pero se convirtió en el sabio mentor de Gohan y un protector clave de la Tierra.</p>
+                <h4>Poderes y Habilidades</h4>
+                <ul>
+                    <li><strong>Fusión Namekiana (con Nail y Kami-sama):</strong> Uniones místicas que incrementaron drásticamente su poder básico.</li>
+                    <li><strong>Piccolo Naranja (Orange Piccolo):</strong> Su transformación más poderosa, desbloqueada gracias a las Esferas del Dragón.</li>
+                    <li><strong>Makankosappo:</strong> Un rayo de energía perforante cargado con dos dedos en la frente.</li>
+                    <li><strong>Granada de Luz:</strong> Un ataque esférico masivo de ki concentrado en sus manos.</li>
+                </ul>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="resources/personajes/piccolo.png" class="img-personaje" alt="Piccolo">
+            </div>
+        </card>
 
-        <h3>Krillin</h3>
-        <p>El mejor amigo de Goku desde la infancia. A pesar de ser un humano común en un mundo de guerreros divinos, destaca por su valentía, ingenio táctico y técnicas icónicas como el Kienzan.</p>
-        <ul>
-            <li><strong>Poder Despertado (Gran Patriarca):</strong> Desbloqueo de su potencial oculto en Namekusei.</li>
-            <li><strong>Estado de No Ego (Selfless State):</strong> Control mental total sobre su miedo y su energía espiritual.</li>
-        </ul>
-        <img src="resources/personajes/krillin.png" class="img-personaje">
+        <card class="personaje">
+            <div class="info-personaje">
+                <h3>Krillin</h3>
+                <p>El mejor amigo de Goku desde la infancia. A pesar de ser un humano común en un mundo de guerreros divinos, destaca por su valentía, ingenio táctico y técnicas icónicas como el Kienzan.</p>
+                <h4>Poderes y Habilidades</h4>
+                <ul>
+                    <li><strong>Poder Despertado (Gran Patriarca):</strong> Desbloqueo de su potencial oculto en Namekusei.</li>
+                    <li><strong>Estado de No Ego (Selfless State):</strong> Control mental total sobre su miedo y su energía espiritual.</li>
+                    <li><strong>Kienzan:</strong> Un disco de ki afilado capaz de cortar estructuras y enemigos mucho más fuertes que él.</li>
+                    <li><strong>Taiyoken:</strong> Una ráfaga de luz cegadora utilizada de manera táctica para escapar o contraatacar.</li>
+                </ul>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="resources/personajes/krillin.png" class="img-personaje" alt="Krillin">
+            </div>
+        </card>
 
-        <h3>Gohan</h3>
-        <p>El hijo primogénito de Goku. Posee un potencial híbrido (humano-saiyajin) latente que supera al de los puros, aunque prefiere la vida pacífica del estudio a menos que sus seres queridos corran peligro.</p>
-        <ul>
-            <li><strong>Super Saiyajin 2:</strong> Desbloqueado en la batalla contra Cell debido a la furia extrema.</li>
-            <li><strong>Estado Definitivo (Gohan Místico):</strong> Potencial desbloqueado al máximo por el Anciano Kaioshin sin necesidad de transformarse en SSJ.</li>
-            <li><strong>Gohan Bestia (Gohan Beast):</strong> Su forma más reciente y destructiva, nacida de una furia sin precedentes.</li>
-        </ul>
-        <img src="resources/personajes/gohan.png" class="img-personaje">
+        <card class="personaje">
+            <div class="info-personaje">
+                <h3>Gohan</h3>
+                <p>El hijo primogénito de Goku. Posee un potencial híbrido (humano-saiyajin) latente que supera al de los puros, aunque prefiere la vida pacífica del estudio a menos que sus seres queridos corran peligro.</p>
+                <h4>Poderes y Habilidades</h4>
+                <ul>
+                    <li><strong>Super Saiyajin 2:</strong> Desbloqueado en la batalla contra Cell debido a la furia extrema.</li>
+                    <li><strong>Estado Definitivo (Gohan Místico):</strong> Potencial desbloqueado al máximo por el Anciano Kaioshin.</li>
+                    <li><strong>Gohan Bestia (Gohan Beast):</strong> Su forma más reciente y destructiva, nacida de una furia sin precedentes.</li>
+                    <li><strong>Masenko:</strong> Su técnica clásica de ráfaga de energía aprendida durante su duro entrenamiento con Piccolo.</li>
+                </ul>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="resources/personajes/gohan.png" class="img-personaje" alt="Gohan">
+            </div>
+        </card>
 
-        <h3>Ten Shin Han</h3>
-        <p>Un formidable artista marcial de la escuela Grulla que dejó atrás el camino del mal tras conocer al Maestro Roshi. Posee un tercer ojo y una disciplina inquebrantable.</p>
-        <ul>
-            <li><em>Nota: No posee transformaciones físicas, pero domina técnicas de alteración corporal como el Shishin no Ken (división en 4 cuerpos) y el Kikoho.</em></li>
-        </ul>
-        <img src="resources/personajes/ten_shin_han.png" class="img-personaje">
+        <card class="personaje">
+            <div class="info-personaje">
+                <h3>Ten Shin Han</h3>
+                <p>Un formidable artista marcial de la escuela Grulla que dejó atrás el camino del mal tras conocer al Maestro Roshi. Posee un tercer ojo y una disciplina inquebrantable.</p>
+                <h4>Poderes y Habilidades</h4>
+                <ul>
+                    <li><strong>Shishin no Ken:</strong> Técnica de alteración corporal que le permite dividirse en 4 cuerpos independientes.</li>
+                    <li><strong>Kikoho / Shin Kikoho:</strong> Un cañón de energía cuadrado sumamente destructivo que consume su propia fuerza vital.</li>
+                    <li><strong>Tercer Ojo:</strong> Le otorga una percepción visual sobrehumana y la capacidad de ver movimientos ultra veloces.</li>
+                </ul>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="resources/personajes/ten_shin_han.png" class="img-personaje" alt="Ten Shin Han">
+            </div>
+        </card>
 
-        <h3>Yamcha</h3>
-        <p>Un exbandido del desierto que se convirtió en uno de los primeros aliados de Goku. Aunque con el tiempo quedó rezagado en poder, sigue siendo un hábil atleta y peleador.</p>
-        <ul>
-            <li><em>Nota: No posee transformaciones. Su técnica definitiva es el Sokidan (esfera de energía controlable).</em></li>
-        </ul>
-        <img src="resources/personajes/yamcha.png" class="img-personaje">
+        <card class="personaje">
+            <div class="info-personaje">
+                <h3>Yamcha</h3>
+                <p>Un exbandido del desierto que se convirtió en uno de los primeros aliados de Goku. Aunque con el tiempo quedó rezagado en poder, sigue siendo un hábil atleta y peleador.</p>
+                <h4>Poderes y Habilidades</h4>
+                <ul>
+                    <li><strong>Roga Fufu Ken (Puño del Lobo):</strong> Una veloz ráfaga de golpes físicos que imita los ataques de un lobo salvaje.</li>
+                    <li><strong>Sokidan:</strong> Una esfera de energía completamente controlable de manera remota con sus dedos.</li>
+                </ul>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="resources/personajes/yamcha.png" class="img-personaje" alt="Yamcha">
+            </div>
+        </card>
     </section>
 
-    <section>
+    <section class="contenedor-personajes">
         <h2>Villanos</h2>
         
-        <h3>Red Ribbon (Patrulla Roja)</h3>
-        <p>Una organización militar paramilitar que busca dominar el mundo mediante las Esferas del Dragón y, más tarde, una megacorporación científica obsesionada con destruir a Goku a través de los androides.</p>
-        <ul>
-            <li><strong>Evolución Tecnológica:</strong> Desde ejércitos convencionales hasta la creación de los Androides (16, 17, 18, 19, 20), Cell y los Gamma.</li>
-        </ul>
-        <img src="resources/personajes/red_ribbon.jpg" class="img-personaje">
+        <card class="personaje">
+            <div class="info-personaje">
+                <h3>Red Ribbon (Patrulla Roja)</h3>
+                <p>Una organización militar paramilitar que busca dominar el mundo mediante las Esferas del Dragón y, más tarde, una megacorporación científica obsesionada con destruir a Goku a través de los androides.</p>
+                <h4>Arsenal y Evolución</h4>
+                <ul>
+                    <li><strong>Evolución Tecnológica:</strong> Desde ejércitos convencionales hasta la creación de los Androides (16, 17, 18, 19, 20), Cell y los Gamma.</li>
+                    <li><strong>Bio-Ingeniería:</strong> Modificación molecular humana y computadoras autónomas de recolección de datos celulares.</li>
+                </ul>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="resources/personajes/red_ribbon.jpg" class="img-personaje" alt="Red Ribbon">
+            </div>
+        </card>
 
-        <h3>Piccolo Daimaku</h3>
-        <p>La mitad malvada creada cuando el Namekiano que se convertiría en Kami-sama expulsó la oscuridad de su corazón. Un verdadero rey demonio que sembró el caos en la Tierra.</p>
-        <ul>
-            <li><strong>Forma Joven:</strong> Recuperó su juventud y su máximo poder destructivo pidiendo un deseo a Shenlong.</li>
-        </ul>
-        <img src="resources/personajes/piccolo_daimaku.png" class="img-personaje">
+        <card class="personaje">
+            <div class="info-personaje">
+                <h3>Piccolo Daimaku</h3>
+                <p>La mitad malvada creada cuando el Namekiano que se convertiría en Kami-sama expulsó la oscuridad de su corazón. Un verdadero rey demonio que sembró el caos en la Tierra.</p>
+                <h4>Poderes y Habilidades</h4>
+                <ul>
+                    <li><strong>Forma Joven:</strong> Recuperó su juventud y su máximo poder destructivo pidiendo un deseo a Shenlong.</li>
+                    <li><strong>Creación de Engendros:</strong> Capacidad de escupir huevos por la boca para dar nacimiento a demonios guerreros a su servicio.</li>
+                    <li><strong>Bakuretsu Maitoho:</strong> Una explosión masiva destructora de ciudades propulsada desde una sola mano.</li>
+                </ul>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="resources/personajes/piccolo_daimaku.png" class="img-personaje" alt="Piccolo Daimaku">
+            </div>
+        </card>
 
-        <h3>Cell</h3>
-        <p>La bio-criatura definitiva creada por la computadora del Dr. Gero a partir de las células de los guerreros más fuertes del universo.</p>
-        <ul>
-            <li><strong>Forma Semi-Perfecta / Perfecta:</strong> Alcanzadas tras absorber a los Androides 17 y 18 respectivamente.</li>
-            <li><strong>Cell Super Perfecto:</strong> Regreso definitivo con un poder eléctrico similar al Super Saiyajin 2 tras su autodestrucción.</li>
-        </ul>
-        <img src="resources/personajes/cell.png" class="img-personaje">
+        <card class="personaje">
+            <div class="info-personaje">
+                <h3>Cell</h3>
+                <p>La bio-criatura definitiva creada por la computadora del Dr. Gero a partir de las células de los guerreros más fuertes del universo.</p>
+                <h4>Poderes y Habilidades</h4>
+                <ul>
+                    <li><strong>Forma Semi-Perfecta / Perfecta:</strong> Alcanzadas tras absorber a los Androides 17 y 18 respectivamente.</li>
+                    <li><strong>Cell Super Perfecto:</strong> Regreso definitivo con un poder eléctrico similar al Super Saiyajin 2 tras su autodestrucción.</li>
+                    <li><strong>Regeneración Celular:</strong> Habilidad copiada de Piccolo que le permite reconstruir su cuerpo a partir de una sola célula.</li>
+                    <li><strong>Uso de Técnicas Clonadas:</strong> Capacidad nativa de usar el Kamehameha, el Kienzan y el Makankosappo de forma perfecta.</li>
+                </ul>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="resources/personajes/cell.png" class="img-personaje" alt="Cell">
+            </div>
+        </card>
 
-        <h3>Majin Buu</h3>
-        <p>Una entidad mágica ancestral de pura destrucción, revivida por el mago Babidi, caracterizada por su cuerpo elástico y su caótica personalidad.</p>
-        <ul>
-            <li><strong>Formas de Absorción (Gotenks, Piccolo, Gohan):</strong> Mutaciones estéticas y de poder al absorber a los Guerreros Z.</li>
-            <li><strong>Kid Boo:</strong> La forma original, primitiva e incontrolable del monstruo.</li>
-        </ul>
-        <img src="resources/personajes/majin_buu.png" class="img-personaje">
+        <card class="personaje">
+            <div class="info-personaje">
+                <h3>Majin Buu</h3>
+                <p>Una entidad mágica ancestral de pura destrucción, revivida por el mago Babidi, caracterizada por su cuerpo elástico y su caótica personalidad.</p>
+                <h4>Poderes y Habilidades</h4>
+                <ul>
+                    <li><strong>Formas de Absorción (Gotenks, Piccolo, Gohan):</strong> Mutaciones estéticas y de poder al absorber a los Guerreros Z.</li>
+                    <li><strong>Kid Boo:</strong> La forma original, primitiva e incontrolable del monstruo.</li>
+                    <li><strong>Rayo Transmutador:</strong> Habilidad mágica disparada desde su antena para convertir a cualquier ser vivo en chocolate o dulces.</li>
+                    <li><strong>Inmortalidad Elástica:</strong> Regeneración inmediata ante cualquier daño físico, permitiéndole rearmarse incluso si es vuelto polvo.</li>
+                </ul>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="resources/personajes/majin_buu.png" class="img-personaje" alt="Majin Buu">
+            </div>
+        </card>
 
-        <h3>Baby</h3>
-        <p>Un parásito alienígena creado a partir del ADN del Rey de los Tsufuru, diseñado para vengarse de los Saiyajin infectando y controlando los cuerpos de sus enemigos en <em>Dragon Ball GT</em>.</p>
-        <ul>
-            <li><strong>Baby Vegeta (y forma Ozaru Dorado):</strong> Su fase más peligrosa tras poseer por completo el cuerpo de Vegeta.</li>
-        </ul>
-        <img src="resources/personajes/baby.png" class="img-personaje">
+        <card class="personaje">
+            <div class="info-personaje">
+                <h3>Baby</h3>
+                <p>Un parásito alienígena creado a partir del ADN del Rey de los Tsufuru, diseñado para vengarse de los Saiyajin infectando y controlando los cuerpos de sus enemigos en <em>Dragon Ball GT</em>.</p>
+                <h4>Poderes y Habilidades</h4>
+                <ul>
+                    <li><strong>Baby Vegeta (y forma Ozaru Dorado):</strong> Su fase más peligrosa tras poseer por completo el cuerpo de Vegeta.</li>
+                    <li><strong>Infección Parasitaria:</strong> Licua su propio cuerpo para introducirse en las heridas de sus víctimas y controlar su cerebro.</li>
+                    <li><strong>Revenge Death Ball (Bola de la Muerte Vengativa):</strong> Una versión oscura y maligna de la Genki-dama de Goku.</li>
+                </ul>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="resources/personajes/baby.png" class="img-personaje" alt="Baby">
+            </div>
+        </card>
 
-        <h3>Super 17</h3>
-        <p>El androide definitivo definitivo surgido en el infierno en <em>Dragon Ball GT</em> a través de la fusión del Andoride 17 original y un nuevo clon mutante.</p>
-        <ul>
-            <li><strong>Modo Absorción:</strong> Capacidad de absorber cualquier ataque de energía para aumentar infinitamente su poder.</li>
-        </ul>
-        <img src="resources/personajes/super_17.png" class="img-personaje">
+        <card class="personaje">
+            <div class="info-personaje">
+                <h3>Super 17</h3>
+                <p>El androide definitivo surgido en el infierno en <em>Dragon Ball GT</em> a través de la fusión del Androide 17 original y un nuevo clon mutante.</p>
+                <h4>Poderes y Habilidades</h4>
+                <ul>
+                    <li><strong>Modo Absorción:</strong> Capacidad de absorber cualquier ataque de energía para aumentar infinitamente su poder.</li>
+                    <li><strong>Flash Bomber (Bombardero de Destellos):</strong> Ráfagas continuas y masivas de ki disparadas desde los dedos de sus manos.</li>
+                </ul>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="resources/personajes/super_17.png" class="img-personaje" alt="Super 17">
+            </div>
+        </card>
 
-        <h3>Omega Shenron</h3>
-        <p>El más poderoso y definitivo de los Dragones Oscuros en <em>Dragon Ball GT</em>, nacido de la energía negativa acumulada por el uso excesivo de las Esferas del Dragón.</p>
-        <ul>
-            <li><strong>Forma Absoluta:</strong> Lograda tras absorber las otras seis esferas corruptas en su propio cuerpo.</li>
-        </ul>
-        <img src="resources/personajes/omega_shenron.png" class="img-personaje">
+        <card class="personaje">
+            <div class="info-personaje">
+                <h3>Omega Shenron</h3>
+                <p>El más poderoso y definitivo de los Dragones Oscuros en <em>Dragon Ball GT</em>, nacido de la energía negativa acumulada por el uso excesivo de las Esferas del Dragón.</p>
+                <h4>Poderes y Habilidades</h4>
+                <ul>
+                    <li><strong>Forma Absoluta:</strong> Lograda tras absorber las otras seis esferas corruptas en su propio cuerpo.</li>
+                    <li><strong>Control de Elementos:</strong> Manipulación de ataques basados en fuego, hielo, electricidad y viento de los dragones previos.</li>
+                    <li><strong>Energía Negativa:</strong> Un aura corrupta capaz de erosionar y destruir la atmósfera de un planeta entero.</li>
+                </ul>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="resources/personajes/omega_shenron.png" class="img-personaje" alt="Omega Shenron">
+            </div>
+        </card>
 
-        <h3>Jiren</h3>
-        <p>El guerrero mortal más fuerte del Universo 11 y miembro de las Tropas del Orgullo. Un coloso cuya fuerza bruta supera incluso a la de los Dioses de la Destrucción de su universo.</p>
-        <ul>
-            <li><strong>Poder Máximo (Full Power):</strong> Estado donde libera su ardiente ki oculto tras romper sus propios límites emocionales.</li>
-        </ul>
-        <img src="resources/personajes/jiren.png" class="img-personaje">
+        <card class="personaje">
+            <div class="info-personaje">
+                <h3>Goku Black</h3>
+                <p>Zamasu, un aprendiz de Kaioshin del Universo 10, que utilizó las Súper Esferas del Dragón para robar el cuerpo de Goku en una línea temporal alternativa y erradicar a los mortales.</p>
+                <h4>Poderes y Habilidades</h4>
+                <ul>
+                    <li><strong>Super Saiyajin Rosé:</strong> La versión divina y corrupta del Super Saiyajin Blue adaptada a su alma de dios.</li>
+                    <li><strong>Espada de Ki (Violent Fierce God Slicer):</strong> Concentración de energía purpura alrededor de su mano para usarla como una hoja cortante.</li>
+                    <li><strong>Hoz de Energía y Clones:</strong> Creación de una guadaña cósmica capaz de rasgar el espacio-tiempo y generar ilusiones tangibles.</li>
+                </ul>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="resources/personajes/goku_black.png" class="img-personaje" alt="Goku Black">
+            </div>
+        </card>
 
-        <h3>Goku Black</h3>
-        <p>Zamasu, un aprendiz de Kaioshin del Universo 10, que utilizó las Súper Esferas del Dragón para robar el cuerpo de Goku en una línea temporal alternativa y erradicar a los mortales.</p>
-        <ul>
-            <li><strong>Super Saiyajin Rosé:</strong> La versión divina y corrupta del Super Saiyajin Blue adaptada a su alma de dios.</li>
-        </ul>
-        <img src="resources/personajes/goku_black.png" class="img-personaje">
+        <card class="personaje">
+            <div class="info-personaje">
+                <h3>Jiren</h3>
+                <p>El guerrero mortal más fuerte del Universo 11 y miembro de las Tropas del Orgullo. Un coloso cuya fuerza bruta supera incluso a la de los Dioses de la Destrucción de su universo.</p>
+                <h4>Poderes y Habilidades</h4>
+                <ul>
+                    <li><strong>Poder Máximo (Full Power):</strong> Estado donde libera su ardiente ki oculto tras romper sus propios límites emocionales.</li>
+                    <li><strong>Escudo de Fuerza de Ki:</strong> Una barrera pasiva invisible tan resistente que bloquea ataques sin que tenga que moverse.</li>
+                    <li><strong>Impacto de Poder:</strong> Una esfera de ki comprimida y pequeña que se expande de golpe de forma masiva al tocar al oponente.</li>
+                </ul>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="resources/personajes/jiren.png" class="img-personaje" alt="Jiren">
+            </div>
+        </card>
 
-        <h3>Hit</h3>
-        <p>El legendario y milenario asesino legendario del Universo 6. Un luchador infalible que destaca por su frialdad y técnicas de manipulación temporal.</p>
-        <ul>
-            <li><strong>Salto Temporal (Tokitoba):</strong> Habilidad para congelar el tiempo por fracciones de segundo, la cual evoluciona durante el combate.</li>
-        </ul>
-        <img src="resources/personajes/hit.png" class="img-personaje">
+        <card class="personaje">
+            <div class="info-personaje">
+                <h3>Hit</h3>
+                <p>El legendario y milenario asesino legendario del Universo 6. Un luchador infalible que destaca por su frialdad y técnicas de manipulación temporal.</p>
+                <h4>Poderes y Habilidades</h4>
+                <ul>
+                    <li><strong>Salto Temporal (Tokitoba):</strong> Habilidad para congelar el tiempo por fracciones de segundo, la cual evoluciona durante el combate.</li>
+                    <li><strong>Mundo Paralelo:</strong> Capacidad de almacenar el tiempo saltado para crear un espacio personal donde se vuelve intangible.</li>
+                    <li><strong>Golpe Fantasma:</strong> Ondas de choque invisibles lanzadas a distancia que impactan directamente los órganos vitales del rival.</li>
+                </ul>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="resources/personajes/hit.png" class="img-personaje" alt="Hit">
+            </div>
+        </card>
     </section>
     <footer>
         &copy Amir Alvarez 2026
