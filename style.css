@@ -1,0 +1,18 @@
+body{
+    font-family: Lato, sans-serif;
+}
+
+.serie-logo{
+    height: auto;
+    width: 200px;
+}
+
+.pelicula-logo{
+    height: auto;
+    width: 200px;
+}
+
+.img-personaje{
+    height: 200px;
+    width: auto;
+}
