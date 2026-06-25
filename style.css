@@ -10,10 +10,23 @@
     --color-principal: #FF6B00;
     --color-fondo: #121214;
     --color-texto: #F5F5F7;
+    --colo-texto-alternativo: #111111;
     --sombra-texto: 0 0 8px rgba(255, 107, 0, 0.6);
     --color-card: rgba(0, 0, 0, 0.4);
     --sombra-contenedores: 0 0 20px rgba(255, 107, 0, 0.2);
     --sombra-parrafos: 1px 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+/* Animaciones */
+@keyframes deslizarAbajo {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); /* Empieza 10px más arriba */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Llega a su posición correcta */
+    }
 }
 
 p{
@@ -39,7 +52,7 @@ h1{
     background-color: var(--color-fondo);
     color: var(--color-texto);
     text-transform: uppercase;
-    text-shadow: var(--sombra-parrafos);
+    text-shadow: var(--sombra-parrafos);    
     
     
     font-size: 100px;
@@ -58,29 +71,62 @@ header p{
 
 /* Navegacion */
 #barra-navegacion{
+    display: flex;
+    align-items: center;
+
     border: 1px solid black;
     background-color: var(--color-principal);
+
     position: sticky;
+    height: 60px;
     top: 0;
     z-index: 100;
     width: 100%;
 }
 
-#barra-navegacion ul{
+.menu, .submenu{
     display: flex;
     flex-direction: row;
     list-style: none;
     padding: 10px;
 }
 
-#barra-navegacion a{
-    padding: 10px;
-    text-decoration: none;
-    color: var(--color-texto);
+.menu > li{
+    position: relative;
+    margin: 0 15px;
 }
 
-#barra-navegacion a:hover{
-    color: red;
+.submenu{
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: #1E1E24;
+    min-width: 160px;
+    border-radius: 4px;
+    padding: 10px 0;
+}
+
+.submenu li a {
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu {
+    display: block;
+    animation: deslizarAbajo 0.3s ease-out;
+}
+
+.menu a{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--colo-texto-alternativo);
+}
+
+.menu a:hover{
+    color: var(--color-texto);
 }
 
 /* Inicio */

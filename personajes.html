@@ -15,15 +15,21 @@
         <p>Los mas recurrentes e importantes de toda la historia.</p>
     </header>
     <nav id="barra-navegacion">
-        <ul>
+        <ul class="menu">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="personajes.html">Personajes</a></li>
+            <li>
+                <a href="personajes.html">Personajes</a>
+                <ul class="submenu">
+                    <li><a href="personajes.html#guerreros-z">Guerreroz Z</a></li>
+                    <li><a href="personajes.html#villanos">Villanos</a></li>
+                </ul>
+            </li>
             <li><a href="series.html">Series</a></li>
             <li><a href="peliculas.html">Peliculas</a></li>
             <li><a href="sorteos.html">Sorteos</a></li>
         </ul>
     </nav>
-    <section class="contenedor-personajes">
+    <section class="contenedor-personajes" id="guerreros-z">
         <h2>Los Guerreros Z</h2>
         
         <card class="personaje">
@@ -146,7 +152,7 @@
         </card>
     </section>
 
-    <section class="contenedor-personajes">
+    <section class="contenedor-personajes" id="villanos">
         <h2>Villanos</h2>
         
         <card class="personaje">
