@@ -35,11 +35,11 @@
             <button class="boton-navegacion" id="boton-anterior">◀</button>
         </div>
         
-        <div class="contenedor-personajes">
+        <div class="contenedor-personajes" id="guerreros-z">
             <h2>Los Guerreros Z</h2>
             <div id="galeria">
                 <card class="personaje">
-                <div class="info-personaje">
+                    <div class="info-personaje">
                         <h3>Goku</h3>
                         <p>El protagonista de la historia, un Saiyajin criado en la Tierra que busca constantemente superar sus propios límites a través de las artes marciales y la protección de su hogar adoptivo.</p>
                         <h4>Poderes y Habilidades</h4>
@@ -163,171 +163,182 @@
             <button class="boton-navegacion" id="boton-siguiente">▶</button>
         </div>
 
-    </div>
-    
-    <!-- <section class="contenedor-personajes" id="villanos">
-        <h2>Villanos</h2>
+    </div> 
+   
+    <div id="padre-villanos">
+        <div class="contenedor-boton">
+            <button class="boton-navegacion" id="boton-anterior-villanos">◀</button>
+        </div>
+
+        <section class="contenedor-personajes" id="villanos">
+            <h2>Villanos</h2>
+            <div id="galeria-villanos">
+                <card class="villano">
+                    <div class="info-personaje">
+                        <h3>Red Ribbon (Patrulla Roja)</h3>
+                        <p>Una organización militar paramilitar que busca dominar el mundo mediante las Esferas del Dragón y, más tarde, una megacorporación científica obsesionada con destruir a Goku a través de los androides.</p>
+                        <h4>Arsenal y Evolucion</h4>
+                        <ul>
+                            <li><strong>Evolución Tecnológica:</strong> Desde ejércitos convencionales hasta la creación de los Androides (16, 17, 18, 19, 20), Cell y los Gamma.</li>
+                            <li><strong>Bio-Ingeniería:</strong> Modificación molecular humana y computadoras autónomas de recolección de datos celulares.</li>
+                        </ul>
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="media/personajes/red_ribbon.jpg" class="img-personaje" alt="Red Ribbon">
+                    </div>
+                </card>
+
+                <card class="villano">
+                    <div class="info-personaje">
+                        <h3>Piccolo Daimaku</h3>
+                        <p>La mitad malvada creada cuando el Namekiano que se convertiría en Kami-sama expulsó la oscuridad de su corazón. Un verdadero rey demonio que sembró el caos en la Tierra.</p>
+                        <h4>Poderes y Habilidades</h4>
+                        <ul>
+                            <li><strong>Forma Joven:</strong> Recuperó su juventud y su máximo poder destructivo pidiendo un deseo a Shenlong.</li>
+                            <li><strong>Creación de Engendros:</strong> Capacidad de escupir huevos por la boca para dar nacimiento a demonios guerreros a su servicio.</li>
+                            <li><strong>Bakuretsu Maitoho:</strong> Una explosión masiva destructora de ciudades propulsada desde una sola mano.</li>
+                        </ul>
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="media/personajes/piccolo_daimaku.png" class="img-personaje" alt="Piccolo Daimaku">
+                    </div>
+                </card>
+
+                <card class="villano">
+                    <div class="info-personaje">
+                        <h3>Cell</h3>
+                        <p>La bio-criatura definitiva creada por la computadora del Dr. Gero a partir de las células de los guerreros más fuertes del universo.</p>
+                        <h4>Poderes y Habilidades</h4>
+                        <ul>
+                            <li><strong>Forma Semi-Perfecta / Perfecta:</strong> Alcanzadas tras absorber a los Androides 17 y 18 respectivamente.</li>
+                            <li><strong>Cell Super Perfecto:</strong> Regreso definitivo con un poder eléctrico similar al Super Saiyajin 2 tras su autodestrucción.</li>
+                            <li><strong>Regeneración Celular:</strong> Habilidad copiada de Piccolo que le permite reconstruir su cuerpo a partir de una sola célula.</li>
+                            <li><strong>Uso de Técnicas Clonadas:</strong> Capacidad nativa de usar el Kamehameha, el Kienzan y el Makankosappo de forma perfecta.</li>
+                        </ul>
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="media/personajes/cell.png" class="img-personaje" alt="Cell">
+                    </div>
+                </card>
+
+                <card class="villano">
+                    <div class="info-personaje">
+                        <h3>Majin Buu</h3>
+                        <p>Una entidad mágica ancestral de pura destrucción, revivida por el mago Babidi, caracterizada por su cuerpo elástico y su caótica personalidad.</p>
+                        <h4>Poderes y Habilidades</h4>
+                        <ul>
+                            <li><strong>Formas de Absorción (Gotenks, Piccolo, Gohan):</strong> Mutaciones estéticas y de poder al absorber a los Guerreros Z.</li>
+                            <li><strong>Kid Boo:</strong> La forma original, primitiva e incontrolable del monstruo.</li>
+                            <li><strong>Rayo Transmutador:</strong> Habilidad mágica disparada desde su antena para convertir a cualquier ser vivo en chocolate o dulces.</li>
+                            <li><strong>Inmortalidad Elástica:</strong> Regeneración inmediata ante cualquier daño físico, permitiéndole rearmarse incluso si es vuelto polvo.</li>
+                        </ul>
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="media/personajes/majin_buu.png" class="img-personaje" alt="Majin Buu">
+                    </div>
+                </card>
+
+                <card class="villano">
+                    <div class="info-personaje">
+                        <h3>Baby</h3>
+                        <p>Un parásito alienígena creado a partir del ADN del Rey de los Tsufuru, diseñado para vengarse de los Saiyajin infectando y controlando los cuerpos de sus enemigos en <em>Dragon Ball GT</em>.</p>
+                        <h4>Poderes y Habilidades</h4>
+                        <ul>
+                            <li><strong>Baby Vegeta (y forma Ozaru Dorado):</strong> Su fase más peligrosa tras poseer por completo el cuerpo de Vegeta.</li>
+                            <li><strong>Infección Parasitaria:</strong> Licua su propio cuerpo para introducirse en las heridas de sus víctimas y controlar su cerebro.</li>
+                            <li><strong>Revenge Death Ball (Bola de la Muerte Vengativa):</strong> Una versión oscura y maligna de la Genki-dama de Goku.</li>
+                        </ul>
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="media/personajes/baby.png" class="img-personaje" alt="Baby">
+                    </div>
+                </card>
+
+                <card class="villano">
+                    <div class="info-personaje">
+                        <h3>Super 17</h3>
+                        <p>El androide definitivo surgido en el infierno en <em>Dragon Ball GT</em> a través de la fusión del Androide 17 original y un nuevo clon mutante.</p>
+                        <h4>Poderes y Habilidades</h4>
+                        <ul>
+                            <li><strong>Modo Absorción:</strong> Capacidad de absorber cualquier ataque de energía para aumentar infinitamente su poder.</li>
+                            <li><strong>Flash Bomber (Bombardero de Destellos):</strong> Ráfagas continuas y masivas de ki disparadas desde los dedos de sus manos.</li>
+                        </ul>
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="media/personajes/super_17.png" class="img-personaje" alt="Super 17">
+                    </div>
+                </card>
+
+                <card class="villano">
+                    <div class="info-personaje">
+                        <h3>Omega Shenron</h3>
+                        <p>El más poderoso y definitivo de los Dragones Oscuros en <em>Dragon Ball GT</em>, nacido de la energía negativa acumulada por el uso excesivo de las Esferas del Dragón.</p>
+                        <h4>Poderes y Habilidades</h4>
+                        <ul>
+                            <li><strong>Forma Absoluta:</strong> Lograda tras absorber las otras seis esferas corruptas en su propio cuerpo.</li>
+                            <li><strong>Control de Elementos:</strong> Manipulación de ataques basados en fuego, hielo, electricidad y viento de los dragones previos.</li>
+                            <li><strong>Energía Negativa:</strong> Un aura corrupta capaz de erosionar y destruir la atmósfera de un planeta entero.</li>
+                        </ul>
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="media/personajes/omega_shenron.png" class="img-personaje" alt="Omega Shenron">
+                    </div>
+                </card>
+
+                <card class="villano">
+                    <div class="info-personaje">
+                        <h3>Goku Black</h3>
+                        <p>Zamasu, un aprendiz de Kaioshin del Universo 10, que utilizó las Súper Esferas del Dragón para robar el cuerpo de Goku en una línea temporal alternativa y erradicar a los mortales.</p>
+                        <h4>Poderes y Habilidades</h4>
+                        <ul>
+                            <li><strong>Super Saiyajin Rosé:</strong> La versión divina y corrupta del Super Saiyajin Blue adaptada a su alma de dios.</li>
+                            <li><strong>Espada de Ki (Violent Fierce God Slicer):</strong> Concentración de energía purpura alrededor de su mano para usarla como una hoja cortante.</li>
+                            <li><strong>Hoz de Energía y Clones:</strong> Creación de una guadaña cósmica capaz de rasgar el espacio-tiempo y generar ilusiones tangibles.</li>
+                        </ul>
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="media/personajes/goku_black.png" class="img-personaje" alt="Goku Black">
+                    </div>
+                </card>
+
+                <card class="villano">
+                    <div class="info-personaje">
+                        <h3>Jiren</h3>
+                        <p>El guerrero mortal más fuerte del Universo 11 y miembro de las Tropas del Orgullo. Un coloso cuya fuerza bruta supera incluso a la de los Dioses de la Destrucción de su universo.</p>
+                        <h4>Poderes y Habilidades</h4>
+                        <ul>
+                            <li><strong>Poder Máximo (Full Power):</strong> Estado donde libera su ardiente ki oculto tras romper sus propios límites emocionales.</li>
+                            <li><strong>Escudo de Fuerza de Ki:</strong> Una barrera pasiva invisible tan resistente que bloquea ataques sin que tenga que moverse.</li>
+                            <li><strong>Impacto de Poder:</strong> Una esfera de ki comprimida y pequeña que se expande de golpe de forma masiva al tocar al oponente.</li>
+                        </ul>
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="media/personajes/jiren.png" class="img-personaje" alt="Jiren">
+                    </div>
+                </card>
+
+                <card class="villano">
+                    <div class="info-personaje">
+                        <h3>Hit</h3>
+                        <p>El legendario y milenario asesino legendario del Universo 6. Un luchador infalible que destaca por su frialdad y técnicas de manipulación temporal.</p>
+                        <h4>Poderes y Habilidades</h4>
+                        <ul>
+                            <li><strong>Salto Temporal (Tokitoba):</strong> Habilidad para congelar el tiempo por fracciones de segundo, la cual evoluciona durante el combate.</li>
+                            <li><strong>Mundo Paralelo:</strong> Capacidad de almacenar el tiempo saltado para crear un espacio personal donde se vuelve intangible.</li>
+                            <li><strong>Golpe Fantasma:</strong> Ondas de choque invisibles lanzadas a distancia que impactan directamente los órganos vitales del rival.</li>
+                        </ul>
+                    </div>
+                    <div class="contenedor-imagen">
+                        <img src="media/personajes/hit.png" class="img-personaje" alt="Hit">
+                    </div>
+                </card>
+            </div>
+        </section>
         
-        <card class="personaje">
-            <div class="info-personaje">
-                <h3>Red Ribbon (Patrulla Roja)</h3>
-                <p>Una organización militar paramilitar que busca dominar el mundo mediante las Esferas del Dragón y, más tarde, una megacorporación científica obsesionada con destruir a Goku a través de los androides.</p>
-                <h4>Arsenal y Evolución</h4>
-                <ul>
-                    <li><strong>Evolución Tecnológica:</strong> Desde ejércitos convencionales hasta la creación de los Androides (16, 17, 18, 19, 20), Cell y los Gamma.</li>
-                    <li><strong>Bio-Ingeniería:</strong> Modificación molecular humana y computadoras autónomas de recolección de datos celulares.</li>
-                </ul>
-            </div>
-            <div class="contenedor-imagen">
-                <img src="media/personajes/red_ribbon.jpg" class="img-personaje" alt="Red Ribbon">
-            </div>
-        </card>
-
-        <card class="personaje">
-            <div class="info-personaje">
-                <h3>Piccolo Daimaku</h3>
-                <p>La mitad malvada creada cuando el Namekiano que se convertiría en Kami-sama expulsó la oscuridad de su corazón. Un verdadero rey demonio que sembró el caos en la Tierra.</p>
-                <h4>Poderes y Habilidades</h4>
-                <ul>
-                    <li><strong>Forma Joven:</strong> Recuperó su juventud y su máximo poder destructivo pidiendo un deseo a Shenlong.</li>
-                    <li><strong>Creación de Engendros:</strong> Capacidad de escupir huevos por la boca para dar nacimiento a demonios guerreros a su servicio.</li>
-                    <li><strong>Bakuretsu Maitoho:</strong> Una explosión masiva destructora de ciudades propulsada desde una sola mano.</li>
-                </ul>
-            </div>
-            <div class="contenedor-imagen">
-                <img src="media/personajes/piccolo_daimaku.png" class="img-personaje" alt="Piccolo Daimaku">
-            </div>
-        </card>
-
-        <card class="personaje">
-            <div class="info-personaje">
-                <h3>Cell</h3>
-                <p>La bio-criatura definitiva creada por la computadora del Dr. Gero a partir de las células de los guerreros más fuertes del universo.</p>
-                <h4>Poderes y Habilidades</h4>
-                <ul>
-                    <li><strong>Forma Semi-Perfecta / Perfecta:</strong> Alcanzadas tras absorber a los Androides 17 y 18 respectivamente.</li>
-                    <li><strong>Cell Super Perfecto:</strong> Regreso definitivo con un poder eléctrico similar al Super Saiyajin 2 tras su autodestrucción.</li>
-                    <li><strong>Regeneración Celular:</strong> Habilidad copiada de Piccolo que le permite reconstruir su cuerpo a partir de una sola célula.</li>
-                    <li><strong>Uso de Técnicas Clonadas:</strong> Capacidad nativa de usar el Kamehameha, el Kienzan y el Makankosappo de forma perfecta.</li>
-                </ul>
-            </div>
-            <div class="contenedor-imagen">
-                <img src="media/personajes/cell.png" class="img-personaje" alt="Cell">
-            </div>
-        </card>
-
-        <card class="personaje">
-            <div class="info-personaje">
-                <h3>Majin Buu</h3>
-                <p>Una entidad mágica ancestral de pura destrucción, revivida por el mago Babidi, caracterizada por su cuerpo elástico y su caótica personalidad.</p>
-                <h4>Poderes y Habilidades</h4>
-                <ul>
-                    <li><strong>Formas de Absorción (Gotenks, Piccolo, Gohan):</strong> Mutaciones estéticas y de poder al absorber a los Guerreros Z.</li>
-                    <li><strong>Kid Boo:</strong> La forma original, primitiva e incontrolable del monstruo.</li>
-                    <li><strong>Rayo Transmutador:</strong> Habilidad mágica disparada desde su antena para convertir a cualquier ser vivo en chocolate o dulces.</li>
-                    <li><strong>Inmortalidad Elástica:</strong> Regeneración inmediata ante cualquier daño físico, permitiéndole rearmarse incluso si es vuelto polvo.</li>
-                </ul>
-            </div>
-            <div class="contenedor-imagen">
-                <img src="media/personajes/majin_buu.png" class="img-personaje" alt="Majin Buu">
-            </div>
-        </card>
-
-        <card class="personaje">
-            <div class="info-personaje">
-                <h3>Baby</h3>
-                <p>Un parásito alienígena creado a partir del ADN del Rey de los Tsufuru, diseñado para vengarse de los Saiyajin infectando y controlando los cuerpos de sus enemigos en <em>Dragon Ball GT</em>.</p>
-                <h4>Poderes y Habilidades</h4>
-                <ul>
-                    <li><strong>Baby Vegeta (y forma Ozaru Dorado):</strong> Su fase más peligrosa tras poseer por completo el cuerpo de Vegeta.</li>
-                    <li><strong>Infección Parasitaria:</strong> Licua su propio cuerpo para introducirse en las heridas de sus víctimas y controlar su cerebro.</li>
-                    <li><strong>Revenge Death Ball (Bola de la Muerte Vengativa):</strong> Una versión oscura y maligna de la Genki-dama de Goku.</li>
-                </ul>
-            </div>
-            <div class="contenedor-imagen">
-                <img src="media/personajes/baby.png" class="img-personaje" alt="Baby">
-            </div>
-        </card>
-
-        <card class="personaje">
-            <div class="info-personaje">
-                <h3>Super 17</h3>
-                <p>El androide definitivo surgido en el infierno en <em>Dragon Ball GT</em> a través de la fusión del Androide 17 original y un nuevo clon mutante.</p>
-                <h4>Poderes y Habilidades</h4>
-                <ul>
-                    <li><strong>Modo Absorción:</strong> Capacidad de absorber cualquier ataque de energía para aumentar infinitamente su poder.</li>
-                    <li><strong>Flash Bomber (Bombardero de Destellos):</strong> Ráfagas continuas y masivas de ki disparadas desde los dedos de sus manos.</li>
-                </ul>
-            </div>
-            <div class="contenedor-imagen">
-                <img src="media/personajes/super_17.png" class="img-personaje" alt="Super 17">
-            </div>
-        </card>
-
-        <card class="personaje">
-            <div class="info-personaje">
-                <h3>Omega Shenron</h3>
-                <p>El más poderoso y definitivo de los Dragones Oscuros en <em>Dragon Ball GT</em>, nacido de la energía negativa acumulada por el uso excesivo de las Esferas del Dragón.</p>
-                <h4>Poderes y Habilidades</h4>
-                <ul>
-                    <li><strong>Forma Absoluta:</strong> Lograda tras absorber las otras seis esferas corruptas en su propio cuerpo.</li>
-                    <li><strong>Control de Elementos:</strong> Manipulación de ataques basados en fuego, hielo, electricidad y viento de los dragones previos.</li>
-                    <li><strong>Energía Negativa:</strong> Un aura corrupta capaz de erosionar y destruir la atmósfera de un planeta entero.</li>
-                </ul>
-            </div>
-            <div class="contenedor-imagen">
-                <img src="media/personajes/omega_shenron.png" class="img-personaje" alt="Omega Shenron">
-            </div>
-        </card>
-
-        <card class="personaje">
-            <div class="info-personaje">
-                <h3>Goku Black</h3>
-                <p>Zamasu, un aprendiz de Kaioshin del Universo 10, que utilizó las Súper Esferas del Dragón para robar el cuerpo de Goku en una línea temporal alternativa y erradicar a los mortales.</p>
-                <h4>Poderes y Habilidades</h4>
-                <ul>
-                    <li><strong>Super Saiyajin Rosé:</strong> La versión divina y corrupta del Super Saiyajin Blue adaptada a su alma de dios.</li>
-                    <li><strong>Espada de Ki (Violent Fierce God Slicer):</strong> Concentración de energía purpura alrededor de su mano para usarla como una hoja cortante.</li>
-                    <li><strong>Hoz de Energía y Clones:</strong> Creación de una guadaña cósmica capaz de rasgar el espacio-tiempo y generar ilusiones tangibles.</li>
-                </ul>
-            </div>
-            <div class="contenedor-imagen">
-                <img src="media/personajes/goku_black.png" class="img-personaje" alt="Goku Black">
-            </div>
-        </card>
-
-        <card class="personaje">
-            <div class="info-personaje">
-                <h3>Jiren</h3>
-                <p>El guerrero mortal más fuerte del Universo 11 y miembro de las Tropas del Orgullo. Un coloso cuya fuerza bruta supera incluso a la de los Dioses de la Destrucción de su universo.</p>
-                <h4>Poderes y Habilidades</h4>
-                <ul>
-                    <li><strong>Poder Máximo (Full Power):</strong> Estado donde libera su ardiente ki oculto tras romper sus propios límites emocionales.</li>
-                    <li><strong>Escudo de Fuerza de Ki:</strong> Una barrera pasiva invisible tan resistente que bloquea ataques sin que tenga que moverse.</li>
-                    <li><strong>Impacto de Poder:</strong> Una esfera de ki comprimida y pequeña que se expande de golpe de forma masiva al tocar al oponente.</li>
-                </ul>
-            </div>
-            <div class="contenedor-imagen">
-                <img src="media/personajes/jiren.png" class="img-personaje" alt="Jiren">
-            </div>
-        </card>
-
-        <card class="personaje">
-            <div class="info-personaje">
-                <h3>Hit</h3>
-                <p>El legendario y milenario asesino legendario del Universo 6. Un luchador infalible que destaca por su frialdad y técnicas de manipulación temporal.</p>
-                <h4>Poderes y Habilidades</h4>
-                <ul>
-                    <li><strong>Salto Temporal (Tokitoba):</strong> Habilidad para congelar el tiempo por fracciones de segundo, la cual evoluciona durante el combate.</li>
-                    <li><strong>Mundo Paralelo:</strong> Capacidad de almacenar el tiempo saltado para crear un espacio personal donde se vuelve intangible.</li>
-                    <li><strong>Golpe Fantasma:</strong> Ondas de choque invisibles lanzadas a distancia que impactan directamente los órganos vitales del rival.</li>
-                </ul>
-            </div>
-            <div class="contenedor-imagen">
-                <img src="media/personajes/hit.png" class="img-personaje" alt="Hit">
-            </div>
-        </card>
-    </section> -->
+        <div class="contenedor-boton">
+            <button class="boton-navegacion" id="boton-siguiente-villanos">▶</button>
+        </div>
+    </div>
     <footer>
         &copy Amir Alvarez 2026
     </footer>
